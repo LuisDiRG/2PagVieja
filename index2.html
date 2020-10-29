@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+           body {
+               
+               background-color: rgb(78, 124, 194);
+           }
+            #title {
+              background-color: rgb(78, 124, 194);  
+              color: rgb(247, 113, 10);
+            }
+            .cuadrado {
+                width: 462px;
+                height: 15px;
+                background-color: rgb(0, 0, 0);
+                position:relative;
+                bottom: 23px;
+            }
+            .cuadrado-restaurant {
+                position: absolute;
+                right: 8px;
+                bottom: 105px;
+                width: 201px;
+                height: 179px;
+                background-color: rgb(240, 182, 24);
+                z-index: 1;
+                float: right;
+                
+                
+                
+            }
+            .restaurant {
+                width: 150px;
+                z-index:2;
+                position: absolute;
+                right: 28px;
+                top: 156px;
+            }
+            .singers {
+                width: 150px;
+                z-index:2;
+                position: absolute;
+                right: 28px;
+                top: 355px;
+            }
+            .cuadrado-singers {
+                width: 197px;
+                height: 179px;
+                background-color: rgb(240, 182, 24);
+                position: absolute;
+                right: 8px;
+                top:315px;
+            }
+            .chicken-wings {
+                width: 150px;
+                z-index: 2;
+                right: 20px;
+                top:41px;
+            }
+            
+            .cuadrado-raffles {
+                 width: 197px;
+                height: 179px;
+                background-color: rgb(240, 182, 24);
+                position: absolute;
+                right: 8px;
+                top: 515px;
+                z-index: 1;
+            }
+            
+            
+            p {
+                width: 45%;
+                font-family: "Avenir", sans serif;
+                margin-left: 7px;
+            }
+            /*poner las imagenes en un class independiente (ya lo tienen) y asignarle la posicion absolute y ubicarlas donde deberian estar*/
+            img {
+                float: right;
+                position: relative;
+                top: 24px;
+                background-color: rgb(240, 182, 24);
+                width:150px;
+                
+            }
+            .final-text {
+                width: 97%;
+                clear: both;
+                background-color: rgb(204, 45, 45);
+                font-size: 20px;
+                text-align: center;
+                line-height: 40px;
+                border:purple 8px inset;
+                font-family: cursive;
+            }
+            
+            .green {
+                background-color: rgb(42, 191, 232);
+                width:70;
+            }
+            
+            .reservation-title {
+                text-align: center;
+                color: rgb(255, 255, 255);
+                margin:4px;
+            }
+            
+            .reservation-text {
+                width: 88%;
+                z-index: 2;
+                position: absolute;
+                left: 32px;
+                top: 949px;
+                font-size: 14px;
+                font-family: "Arial", serif;
+                padding: 6px;
+                
+                
+            }
+            
+            
+            
+            .cuadrado-reservation {
+                background-color: white;
+                width: 526px;
+                height: 156px;
+                position: absolute;
+                top: 954px;
+                left: 24px;
+                z-index: 0;
+                border: rgb(135, 124, 135) 7px inset ;
+            }
+            .boton {
+                text-decoration: none;
+                padding: 10px;
+                font-weight: 600;
+                font-size:20px;
+                color: white;
+                background-color: black;
+                border-radius: 6px;
+                border: 2px solid;
+                position: absolute;
+                top: 1060px;
+                right: 231px;
+                z-index: 3;
+                
+            }
+            .boton:hover {
+                color: black;
+                background-color: gray;
+            }
+            .redirection {
+                position: relative;
+                top: 169px;
+                right: 8px;
+                width: 105%;
+                
+                color: orange;
+                z-index: 1;
+                margin-left: 22px;
+            }
+            .redirection-cuadrado {
+               position: relative;
+               top: 126px;
+                right: 8px;
+                width: 105%;
+                height:31px;
+                background-color: black; 
+            }
+            .redirection-href {
+                
+                font-weight: bold;
+                color: orange;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1 id="title">Richmond's Wings Event</h1>
+        <div class="cuadrado"></div>
+        
+        <div class="green">
+        <h2>Foods Discount</h2>
+        
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Le_Bois_Sans_Feuilles.png" alt="restaurant" class="restaurant">
+          
+       <div class="cuadrado-restaurant"></div>
+        <p>The restaurant will be giving discounts to the customers in the event. The discounts in food apply to all the plates and drinks. We want you to be fine and have a wonderful experience.</p> 
+            
+        </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Duran_Duran_2011.jpg" alt="singers" class="singers">
+        
+        <div class="green">
+        <h2> Nacional Singers</h2>
+        <div class="cuadrado-singers"> </div>
+        <p> Some singers such as Los Ajenos will sing in our restaurant during the night. The singers will start at 7pm. The group is inmensely grateful that this singers will participate in our restaurant. </p></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Buffalo_-_Wings_at_Airport_Anchor_Bar.jpg/1200px-Buffalo_-_Wings_at_Airport_Anchor_Bar.jpg" alt="chicken wings" class="chicken-wings">
+       <div class="green"> 
+       <h2 class="raffles"> Raffles</h2>
+       <div class="cuadrado-raffles"></div>
+       <p> Because the event is so important to us, we want to give 10 raffles. Some raffles include free plates, a photo with Los Ajenos, more discounts, and many other raffles that will make people have fun.</p> </div>
+       
+        <p class="final-text"> The restaurant is excited to see many people coming to it! We were planning the event many time ago and we promise you and your friends, family, or companion will feel a positive energy and a lot of fun!</p>
+        <div class="register">
+            
+            <div class=" reservation"><h1 class="reservation-title"> Want to have a reservation?</h1>
+            
+            <p class="reservation-text">We will provide reservations if you want to come alone or with a group and not to worry if it will be full. Just add some information about you and you will have your resercation!</p>
+            </div>
+            <div class="cuadrado-reservation"> </div>
+        </div>
+        <a class="boton" href="https://luisdirg.github.io/">Registrarse</a>
+        
+        <!-- Missing the last part, where I send them to the first part of the web page-->
+       <p class="redirection"> <a class="redirection-href" href="#title"> See</a>
+       the event invitation again</p>
+       <div class="redirection-cuadrado"></div>
+    </body>
+    
+</html>
